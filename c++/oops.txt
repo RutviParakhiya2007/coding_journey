@@ -12,6 +12,8 @@ entity :- exstis, space occupy, character, functioanlity
 
 3.friend :it is use specially when we want to access the private or a protced member of a particular class via through a function which is define outside that class
 
+4. virtual : it is a function in a base class that can be changed (overridden) in a derived class and is called at runtime using the virtual keyword
+
 #_class :- 
 it is a blueprint/skeleton of object(object -> particular entity)
 -> and it is a "keyword" to define a members(data members, function members)
@@ -32,7 +34,7 @@ it is used to initialize of the value to a particular object members during obje
 2. parametarized - If the base class has a parameterized constructor, the derived class must call it and pass the required parameters [https://github.com/RutviParakhiya2007/CGxSU_Semester_1/blob/main/cpp_language(sem_02)/13.constructor_and_destructor_behavior_in_inheritance.md#2-constructor-with-parameters-in-inheritance]
 
 #_Destructre :-
-it is a kind of function but get call autometicaally by c++ compiler when a particular object is about to get destroy because of the block scope.
+it is a kind of function but get call automatically by c++ compiler when a particular object is about to get destroy because of the block scope.
 [https://github.com/RutviParakhiya2007/CGxSU_Semester_1/blob/main/cpp_language(sem_02)/13.constructor_and_destructor_behavior_in_inheritance.md#3-destructor-behavior-in-inheritance]
 
 #_inheritance :- 
@@ -97,7 +99,7 @@ types : 1.public, 2.private, 3.protected
     3.protected - it comes with flexibility (koi class ne use krvu hoy to ene children banvu pade access krva mate)
     ->the same rule must be follow by the childern class of that pervious of actual class
     [https://github.com/RutviParakhiya2007/CGxSU_Semester_1/blob/main/cpp_language(sem_02)/07.access_modifires.md#4-protected-access-specifier]
-    
+
     [https://github.com/RutviParakhiya2007/CGxSU_Semester_1/blob/main/cpp_language(sem_02)/12.protected_members_and_access.md#protected-members-and-access-in-inheritance]
 
 #_Friend Function :- (koi pn class ni bar access kri sakay)
@@ -108,16 +110,18 @@ Friend function class no member nathi, pan te class na private ane protected mem
 Friend class evo class chhe je bija class na private ane protected members ne access kari shake chhe, kem ke ene friend tarike declare kari hoy chhe
 [https://github.com/RutviParakhiya2007/CGxSU_Semester_1/blob/main/cpp_language(sem_02)/16.friend_functions_and_classes.md#3-friend-classes-in-c]
 
-#_Encapsulation :-
+#_Encapsulation :- 
 
-#_Abstraction :-
+#_Abstraction :- (pure virtual function is used to list out the compulsory infromation to be displayed to the user)
 
-#_polymorphism :-
+#_polymorphism :- 
 (many+form) 
 
     1. Compile time polymorphism - 
-        (i)function_overloading : (same function member)
-        (ii)operator_overloading : 
+        (i)function_overloading : (same function member) (same class)
+        (ii)operator_overloading : (using same operator) (concating)
 
-    2. Run time polymorphism - a no. of function members which was define in a base class but it get overwrite by it's own derived(child) class but with some changes.
-        
+    2. Run time polymorphism - a no. of function members which was define in a base class but it get overwrite by it's own derived(child) class but with some changes. 
+                             - it is used to impliment "function overloading" concept
+                             to implement "function overriding that the number of function must be defined already inside the parent class which will be overrider by it's own children 
+                             - but in child class in order to "override" the alreday defined function members inside parent classs -> write same function name, same parameter and same datatype
